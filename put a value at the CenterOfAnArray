@@ -1,0 +1,24 @@
+import java.util.Arrays;
+public class GFG
+{
+	public static void main (String[] args)
+	{
+int value=20;
+int arr[] = {1,2,3,4,5,6,7,8,9};
+int ln = arr.length;
+double centerval= ln/2;
+int center = (int) Math.ceil(centerval);
+
+       for(int i=ln ;i<center;i--){
+         arr[i+1]=arr[i];
+        }
+    
+       if(centerval%2==0){
+          arr[center]=value;
+      }
+        else{  
+    arr[center+1]=value;}
+        System.out.println(Arrays.toString(arr));
+
+}
+}
