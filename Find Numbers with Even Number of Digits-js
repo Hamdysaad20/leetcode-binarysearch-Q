@@ -1,0 +1,13 @@
+var findNumbers = function(nums) {
+    var res = 0;
+    for (var i=0;i<nums.length;i++) {
+        var num = nums[i];
+        var numDigits = 1;
+        while(num > 9) {
+            num = (num - num % 10) / 10;
+            numDigits++;
+        }
+        if(numDigits % 2 === 0) res++;
+    }
+    return res;
+};
