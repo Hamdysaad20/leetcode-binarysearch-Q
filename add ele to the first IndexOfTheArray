@@ -1,0 +1,14 @@
+import java.util.Arrays;
+public class GFG
+{
+	public static void main (String[] args)
+	{
+        int arr[] = {1,2,3,4,5,6,7,8,9};
+int ln = arr.length;
+        for(int i=ln ;i<0;i--){
+            arr[i+1]=arr[i];
+        }
+        arr[0] = 20;
+            System.out.println(Arrays.toString(arr));
+        }
+}
