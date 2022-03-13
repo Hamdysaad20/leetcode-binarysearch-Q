@@ -1,0 +1,13 @@
+var search = function(nums, target) {
+var low =0;
+var high = nums.length-1;
+    while(low<high){
+        var center =low+Math.floor((high-low+1)/2);
+        if(target<nums[center]){
+            high=center-1
+        }else{
+            low=center
+        }
+    }
+    return nums[low]==target?low:-1;
+}
