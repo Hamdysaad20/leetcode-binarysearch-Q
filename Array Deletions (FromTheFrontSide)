@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class Main
+{
+	public static void main(String[] args) {
+int NumberToDelete = 2;         
+int arr1[] = {1,2,309,66,0};
+
+int arrln =arr1.length;
+int[] newArray = new int[arrln-NumberToDelete];
+
+for(int i=arrln ; i>NumberToDelete ; i--){
+newArray[i-(NumberToDelete+1)] =  arr1[i-1] ;
+}
+        
+ System.out.println(Arrays.toString(newArray));	}
+}
