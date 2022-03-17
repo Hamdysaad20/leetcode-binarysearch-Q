@@ -1,0 +1,45 @@
+class Solution {
+    public boolean validMountainArray(int[] arr) {
+        
+    if(arr.length >= 3 ){
+       int i = 1;
+       if(arr[i] < arr[i-1]){ return false;}
+     
+        
+        while(i<arr.length && arr[i]>=arr[i-1]){
+         
+            if(arr[i] == arr[i-1]){ return false;}
+            
+
+            
+            i++;
+       } if(i == arr.length){return false;}
+      
+        int chamgingpoint= --i;
+    
+        
+        while(chamgingpoint<arr.length-1 && arr[chamgingpoint+1] <= arr[chamgingpoint]){
+                 if( arr[chamgingpoint+1] == arr[chamgingpoint]){ return false;}
+                
+
+        chamgingpoint++;
+       } if(chamgingpoint == arr.length-1){return true;}
+    }
+        
+        return false;
+    
+    }
+}
+
+
+_______________________the best solu______________________
+class Solution {
+    public boolean validMountainArray(int[] arr) {
+        if(arr.length < 3) return false;
+        int l = 0;
+        int r = arr.length - 1;
+        while(l + 1 < arr.length - 1 && arr[l] < arr[l + 1]) l++;
+        while(r - 1 > 0 && arr[r] < arr[r - 1]) r--;
+        return l == r;
+    }
+}
