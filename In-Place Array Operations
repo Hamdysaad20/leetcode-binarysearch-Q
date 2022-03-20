@@ -10,7 +10,11 @@ public class mian {
 //Given an Array of integers, return an Array where every element at an even-indexed position is squared.
         int[] nums = {9,-2,-9,11,56,-12,-3};
         int i=0;
-        while(i<nums.length){
+        if (nums == null) {
+    return null;
+  }
+      
+      while(i<nums.length){
             nums[i]= (int) Math.pow(nums[i],2);
         i+=2;
         }
