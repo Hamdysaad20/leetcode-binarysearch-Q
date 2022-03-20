@@ -1,0 +1,41 @@
+________________rightside & biggest___________________
+class Solution {
+    public int[] replaceElements(int[] arr) {
+        int greatest = -1;
+        for(int i=arr.length-1;i>=0;i--){
+            int temp = arr[i];
+            arr[i] = greatest;
+            greatest = Math.max(temp,greatest);
+        }
+        return arr;
+    }
+}
+
+
+________________leftside & smallest___________________
+class Solution {
+    public int[] solve(int[] nums) {
+        
+
+
+
+
+
+
+ int smallest = 0;
+        for(int i=0;i<nums.length;i++){
+            int temp = nums[i];
+            nums[i] = smallest;
+          smallest = Math.min(temp,smallest);
+            if(i<1) smallest = Math.max(temp,smallest);
+            
+        }
+        return nums;
+
+
+
+
+
+
+    }
+}
