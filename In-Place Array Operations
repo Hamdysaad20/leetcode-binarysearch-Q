@@ -1,0 +1,19 @@
+## //Given an Array of integers, return an Array where every element at an even-indexed position is squared.
+/*Input: array = [9, -2, -9, 11, 56, -12, -3]
+Output: [81, -2, 81, 11, 3136, -12, 9]
+Explanation: The numbers at even indexes (0, 2, 4, 6) have been squared, 
+whereas the numbers at odd indexes (1, 3, 5) have been left the same.
+import java.util.Arrays;
+*/
+public class mian {
+    public static void main(String[] args) {
+//Given an Array of integers, return an Array where every element at an even-indexed position is squared.
+        int[] nums = {9,-2,-9,11,56,-12,-3};
+        int i=0;
+        while(i<nums.length){
+            nums[i]= (int) Math.pow(nums[i],2);
+        i+=2;
+        }
+        System.out.println(Arrays.toString(nums));
+        }
+    }
