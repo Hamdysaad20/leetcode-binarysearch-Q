@@ -1,14 +1,26 @@
+/*
+1- Create the totalSum & leftside vars == 0 ;
+2- Map throw the array to get the totalSum of it ,then put it inside totalSum var;
+3- there we talking :).
+   so here you need to map again and put two conditions .
+4- con1: i!=0 then sum (leftside & nums[i-1]) then put it inside leftsum.
+5- con2: "the algo." (totalsum-leftside-nums[i]== leftside) then this is a pivot, return the i.
+put return -1 at the global method so that means there is no pivot in the array .
+
+*/
+
 class Solution {
     public int pivotIndex(int[] nums) {
      //get the total sum for all the array
     //which works as a right sum ;
         int totalSum=0;
+          int leftSum=0;
         for(int i=0; i<nums.length ;i++){
             totalSum+=nums[i];
         }
         
         
-        int leftSum=0;
+      
         for(int i=0; i<nums.length;i++){
             //chick that the left side is not the right side .
             if(i!=0)leftSum+=nums[i-1];
