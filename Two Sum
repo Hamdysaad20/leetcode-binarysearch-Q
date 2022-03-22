@@ -13,3 +13,17 @@ public class Solution {
         return null;
     }
 }
+
+
+
+________________ my sol_________
+   HashMap<Integer,Integer> numMap= new HashMap<>();
+        for(int i =0 ; i< nums.length ; i++){
+  int comb= target-nums[i];
+            if(numMap.containsKey(comb)){
+                return new int[] {numMap.get(comb),i};
+            }
+            numMap.put(nums[i],i);
+
+
+        }
