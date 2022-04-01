@@ -1,0 +1,19 @@
+class Solution {
+public void reverseString(char[] s) {
+// defind 3 vars the right,left pointers , the temp value.
+int r = s.length-1;
+int l=0;
+int value=0;
+//while the pointers are not pointing at the same position "char"
+while(r>l){
+//simply the 3 cups game .. how to swap 2 cups using one empty cup
+value = s[l];
+s[l]= (char) s[r];
+s[r]=(char)value;
+// increnint and decrement the left , right pointers .
+r--;
+l++;
+//then repeate if the while condition is true
+}
+}
+}
