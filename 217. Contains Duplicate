@@ -1,0 +1,20 @@
+class Solution {
+public boolean containsDuplicate(int[] nums) {
+
+Hashset<Integer> set = new Hashset<>();
+    
+    	for(int i=0;i<nums.length;i++){
+		if(!set.add(nums[i])) return true;
+	}
+    return false;
+}
+}
+
+**1- you can solve it by 2 nested for loops :-**
+conditions:( nums[j] == nums[i] && j != i )
+
+
+**2-By using Hashset :-**
+  - create hashset	- then - one for loop
+	   - inside the loop (a condition for true):
+		 ` !set.add(nums[i])`
