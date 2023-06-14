@@ -12,8 +12,7 @@
 
 
 
-![LeetCode Stats](https://leetcard.jacoblin.cool/Hamdysaad20?theme=dark&font=JetBrains%20Mono&ext=activity&site=cn)
-</div>
+![LeetCode Stats](https://leetcard.jacoblin.cool/Hamdysaad20?theme=dark&font=JetBrains%20Mono)</div>
 </br>
 </br>
 
