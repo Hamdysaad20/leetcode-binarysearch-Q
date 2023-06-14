@@ -1,7 +1,19 @@
-# <p align="center"> (Some of my LeetCode problems (Solved)) </p>
-##  <p align="center">
- all the code here is submitted successfully and tested, all of the code is my way to solve it and I want to keep it here to look back at it in the future and see the progress that I have achieved.
-    </p>
-<p align="center">
-"" please notice that this was my way to solve it at this time if you look at this in the future and I will update it if there is a more efficient way to write the code (less code) , time complexity ...etc ""
- </p>
+<div align="center">
+<img src="https://github.com/CrutchTheClutch/LeetCode/raw/master/logo.png" width="450" height="auto"/>
+
+
+</br>
+
+
+[![Languages](https://img.shields.io/badge/Languages-Rust,%20Python,%20Java,%20JavaScript-red.svg?style=flat)](https://github.com/hamdysaad20/HackerRank#table-of-contents)
+[![Hamdysaad](https://img.shields.io/badge/LeetCode%20Profile-blue.svg?style=flat)](https://leetcode.com/hamdysaad20/)
+
+
+
+
+
+![LeetCode Stats](https://leetcard.jacoblin.cool/Hamdysaad20?theme=dark&font=JetBrains%20Mono&ext=activity&site=cn)
+</div>
+</br>
+</br>
+
